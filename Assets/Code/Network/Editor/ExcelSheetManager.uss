@@ -1,0 +1,43 @@
+.title-text {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0 rgb(63, 63, 63);
+    -unity-text-align: upper-center;
+}
+
+.sub-title-text {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.sub-container {
+    flex-grow: 0;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu-box {
+    flex-grow: 0;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    background-color: rgb(109, 108, 114);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
