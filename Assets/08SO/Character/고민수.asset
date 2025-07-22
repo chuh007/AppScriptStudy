@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 037ab7f83e1743149b6974aecf7f1cc1, type: 3}
-  m_Name: Knight
+  m_Name: "\uACE0\uBBFC\uC218"
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  characterName: Knight
-  maxHealth: 150
-  guid: caf73036d22e86745b2e1c3edeedd35f
-  CharacterImage: {fileID: 8581676262710242091, guid: 10491c4e8f7304f4a93e50488feb3189, type: 3}
+  moveSpeed: 1
+  characterName: "\uACE0\uBBFC\uC218"
+  maxHealth: 200
+  guid: 5b0acca8-5f23-405d-a3f0-0f3b519aacb9
+  CharacterImage: {fileID: 9010593099985828775, guid: 10491c4e8f7304f4a93e50488feb3189, type: 3}
+  timestamp: 1753194878994

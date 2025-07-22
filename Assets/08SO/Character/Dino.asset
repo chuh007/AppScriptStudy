@@ -15,5 +15,6 @@ MonoBehaviour:
   moveSpeed: 10
   characterName: Dino
   maxHealth: 100
-  guid: a93214e486d739447aef75a4836d6f70
+  guid: 8fde7d86-454a-4a9f-9e9f-eb9fde76cff4
   CharacterImage: {fileID: -4090646339925660478, guid: 10491c4e8f7304f4a93e50488feb3189, type: 3}
+  timestamp: 1753194724993

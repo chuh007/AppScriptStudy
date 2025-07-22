@@ -1,7 +1,9 @@
-﻿using Code.Network;
+﻿using System;
+using Code.Network;
 using Defective.JSON;
 using UnityEditor;
 using UnityEngine;
+using File = System.IO.File;
 
 namespace Code.Characters
 {
@@ -14,6 +16,8 @@ namespace Code.Characters
         public string guid;
         public Sprite CharacterImage;
         
+        public long timestamp;
+        
         public string ToJson()
         {
             JSONObject jsonObject = new JSONObject();
@@ -25,17 +29,24 @@ namespace Code.Characters
             return jsonObject.ToString(); // Json 스트링으로 만들어서 리턴해준다.
         }
 
-        private void OnValidate()
+        public void OnValidate()
         {
             if(string.IsNullOrEmpty(guid))
                 GenerateGUID();
-        }
-
-        private void GenerateGUID()
-        {
 #if UNITY_EDITOR
             string path = AssetDatabase.GetAssetPath(this);
-            GUID assetGuid = AssetDatabase.GUIDFromAssetPath(path);
+            DateTime lastWriteTime = File.GetLastWriteTime(path);
+            DateTime unixEpoch = new DateTime(1970, 1, 1);
+            timestamp = (lastWriteTime.Ticks - unixEpoch.Ticks) / 10000;
+#endif
+        }
+        
+
+        
+        public void GenerateGUID()
+        {
+#if UNITY_EDITOR
+            Guid assetGuid = Guid.NewGuid();
             guid = assetGuid.ToString();
 #endif
         }
