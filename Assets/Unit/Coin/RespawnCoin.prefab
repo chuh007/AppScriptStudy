@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &419747988283578577
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706205686914307752, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417117469094630302, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1265253785
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417117469094630302, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 939403074
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429814284365821250, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_Name
+      value: RespawnCoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429814284365821250, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6429814284365821250, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3496945309676039106}
+  m_SourcePrefab: {fileID: 100100000, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+--- !u!58 &6558515001005766350 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6834133507293785631, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+  m_PrefabInstance: {fileID: 419747988283578577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6694729025887710611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6429814284365821250, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+  m_PrefabInstance: {fileID: 419747988283578577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3496945309676039106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694729025887710611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d907634d7c4341cab5f615afcbc75a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  spriteRenderer: {fileID: 8549488721820080673}
+  circleCollider: {fileID: 6558515001005766350}
+  coinValue: 1
+  isCollected: 0
+  isActive:
+    m_InternalValue: 0
+  OnCollected:
+    m_PersistentCalls:
+      m_Calls: []
+  _prevPosition: {x: 0, y: 0}
+--- !u!212 &8549488721820080673 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8320079392878920432, guid: 72a4b315424932749ac66e9dc9849251, type: 3}
+  m_PrefabInstance: {fileID: 419747988283578577}
+  m_PrefabAsset: {fileID: 0}

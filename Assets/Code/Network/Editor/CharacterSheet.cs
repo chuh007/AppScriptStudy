@@ -169,7 +169,7 @@ namespace Code.Network.Editor
                 byte[] pngBytes = texture.EncodeToPNG();
                 string base64Image = Convert.ToBase64String(pngBytes); // 바이트 스트림을 base65 스트링으로 변경해준다.
                 itemObject.AddField("guid", item.guid);
-                itemObject.AddField("image", base64Image);
+                itemObject.AddField("texture", base64Image);
                 
                 Debug.Log(base64Image);
                 payload.Add(itemObject);
