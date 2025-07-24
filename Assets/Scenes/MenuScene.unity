@@ -377,8 +377,9 @@ GameObject:
   - component: {fileID: 340231954}
   - component: {fileID: 340231956}
   - component: {fileID: 340231957}
+  - component: {fileID: 340231958}
   m_Layer: 5
-  m_Name: MenuRow
+  m_Name: IpConnectMenuRow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -491,6 +492,22 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &340231958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340231952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6726ccc0f1d40f9b3b66c5a44609209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ipInputField: {fileID: 1920760213}
+  postInputField: {fileID: 2037747835}
+  hostBtn: {fileID: 866161632}
+  clientBtn: {fileID: 176492572}
 --- !u!1 &492211226
 GameObject:
   m_ObjectHideFlags: 0
